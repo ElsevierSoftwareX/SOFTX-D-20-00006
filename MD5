@@ -1,0 +1,8 @@
+a0b7c4bc2482b5f15ea21015dc75eb86 *DESCRIPTION
+81945ebdf494cc3f0bd7d292c797252c *NAMESPACE
+d16b4760226e2f5ea7c05a58e3b0cc14 *R/Find_dim_JLT.R
+aa05ae183abc6641996ed96676404ccf *R/form_gauss_matrix.R
+9b7d997d2fc8995bcb6f388f2b1e63ff *R/form_sparse_matrix.R
+90ecc9b09c9c30de54735ae73aaf86fc *man/find_dim_JL.Rd
+c0e0041c01f3cca5367b77827ee8e492 *man/form_gauss_matrix.Rd
+7d5d574fb6a9e598b802433fbc19b860 *man/form_sparse_matrix.Rd
