@@ -1,17 +1,19 @@
-#'  Johnson - Lindenstrauss Function
+#'  Function to determine the required number of dimension for generating the projection matrix
 #'
-#' Johnson Lindenstrauss Transform[JLT] is the heart of random projection.
-#' The lemma states that a small set of points in a high-dimensional space can be embedded into
-#' a space of much lower dimension in such a way that distances between the points are nearly preserved.
-#' The lemma has used in dimensionality reduction, compressed sensing, manifold learning and graph embedding.
-#' \eqn{(1 - epsilon) ||x - y||^2 < ||RP(x) - RP(y)||^2 < (1 + epsilon) ||x - y||^2}
-#' where x and y are number of rows and columns respectively
+#' Johnson-Lindenstrauss (JL) lemma is the heart of random projection.
+#' The lemma states that a small set of points in a high-dimensional space
+#' can be embedded into low dimensional space in such a way that distances between the
+#' points are nearly preserved.
+#' The lemma has been used in dimensionality reduction, compressed sensing, manifold learning and graph embedding.
+#' The epsilon is the error tolerant parameter and it is inversely
+#' proportional to the accuracy of the result. The higher error tolerant level decreases the number of
+#' dimension and also the computation complexity with the marginal loss of accuracy.
 #'
 #' @details
-#' The function find_dim_JL() is used to find the minimum dimension required to project the data from high dimensional
-#' space to low dimensional space. The number of sample and error tolerant level was passed as an input argument
-#' to the function find_dim_JL() .
-#' It will return the minimal size of the random subspace to guarantee a bounded distortion introduced by
+#' The function dimension() is used to find the minimum dimension required to project the data from high dimensional
+#' space to low dimensional space. The number of sample and error tolerant level has been passed as an input argument
+#' to the function dimension() .
+#' It will return the size of the random subspace to guarantee a bounded distortion introduced by
 #' the random projection.
 #'
 #' @param sample - number of samples
@@ -24,15 +26,16 @@
 #' library(RandPro)
 #'
 #' #Calculate minimum dimension using eps =0.5 for 1000000 sample
-#' y <- find_dim_JL(1000000,0.5)
+#' y <- dimension(1000000,0.5)
 #'
 #' #Calculating minimum dimension using different epsilon value for 1000000 sample
 #' d <-  c(0.5,0.1)
-#' x<- find_dim_JL(103260,d)
+#' x<- dimension(103260,d)
 #'
 #' @keywords Random projection , Johnson - Lindenstrauss Lemma, Dimension Reduction
 #'
-#' @return minimum number of dimension required to maintain the pai wise distance with the controlled amount of error
+#' @return minimum number of dimension required to maintain the pair wise distance between any two
+#' points with the controlled amount of error(eps)
 #'
 #' @author Aghila G
 #' @author Siddharth R
@@ -50,7 +53,7 @@
 #   Check Package:             'Ctrl + Shift + E'
 #   Test Package:              'Ctrl + Shift + T'
 
-find_dim_JL <- function(sample,epsilon=0.1)
+dimension <- function(sample,epsilon=0.1)
 {
   if(nargs()==1)
   {
@@ -61,7 +64,7 @@ find_dim_JL <- function(sample,epsilon=0.1)
   for(i in seq(eps))
   {
     try(
-    if((eps[i]>1.0)|(eps[i]<0.0))
+    if((eps[i]>1.0)|(eps[i]<=0.0))
     {
       stop("The JL bound for epsilon is [0.0,1.0], got",dQuote(eps))
     }
