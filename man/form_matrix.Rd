@@ -81,11 +81,10 @@ Aghila G
 
 Siddharth R
 }
-\keyword{Achlioptas,}
-\keyword{Dimension_Reduction,}
-\keyword{Gaussian-Distribution,}
-\keyword{Johnson-Lindenstrauss_Lemma,}
-\keyword{Li,Probability}
-\keyword{RandomProjection,}
-\keyword{distribution}
-\keyword{sparse_matrix,}
+\keyword{Achlioptas}
+\keyword{Distribution}
+\keyword{Gaussian}
+\keyword{Li}
+\keyword{Probability}
+\keyword{Projection_matrix}
+\keyword{sparse_matrix}

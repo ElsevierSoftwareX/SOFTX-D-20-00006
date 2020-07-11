@@ -1,8 +1,9 @@
-56bd53768ac26b98a1d25c86865b71e3 *DESCRIPTION
+074bf4daa86a7cc8fcca79265a683adf *DESCRIPTION
 2f98c3008cb0024eee5cd7a1178dc567 *NAMESPACE
-f2c7d1fc17f14b3a0757962bc5856c41 *R/classify.R
-e74ef958e7ad210a59cc192ff63f2314 *R/dimension.R
-938e896090b5aa13d10e70665c2cac2b *R/form_matrix.R
-485dbb9ff965a5e44afbfc4e1c73b3bf *man/classify.Rd
-d0f5c5be81d6e585e2731bf038e3e337 *man/dimension.Rd
-56e5f8dee83df03f665b1c7854e195db *man/form_matrix.Rd
+17ebe9226adc102f5ca7b0dd6e6cd712 *R/classify.R
+0ef64e606b57ec4f500cde03f8aa3e30 *R/dimension.R
+cf1fb2c1230b6e5404688bb7a9329359 *R/form_matrix.R
+af73d137b30aee82973a3295cf4b5918 *README.md
+116ed2e52b7bc48723e79be0b1ede357 *man/classify.Rd
+3763ee3dc0228cbf7f338bcadb194ae5 *man/dimension.Rd
+8e3d4e8506fda5777dcb55186dfd7d09 *man/form_matrix.Rd

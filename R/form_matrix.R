@@ -56,8 +56,8 @@
 #' mat <- form_matrix(250,1000000,TRUE,0.5,"achlioptas")
 #'
 #'
-#' @keywords RandomProjection, Johnson-Lindenstrauss_Lemma, Dimension_Reduction, Gaussian-Distribution,
-#' sparse_matrix, Achlioptas, Li,Probability distribution
+#' @keywords Distribution Gaussian sparse_matrix Achlioptas Li Probability Projection_matrix
+#' 
 #'
 #' @return Projection Matrix
 #'

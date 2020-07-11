@@ -4,8 +4,15 @@
 \alias{classify}
 \title{Classification Function}
 \usage{
-classify(train_data, test_data, train_label, test_label, eps = 0.1,
-  projection = "gaussian", classifier = "knn")
+classify(
+  train_data,
+  test_data,
+  train_label,
+  test_label,
+  eps = 0.1,
+  projection = "gaussian",
+  classifier = "knn"
+)
 }
 \arguments{
 \item{train_data}{- Training data of either matrix or data frame}
@@ -85,9 +92,8 @@ Aghila G
 
 Siddharth R
 }
-\keyword{Dimension_Reduction,}
-\keyword{Johnson-Lindenstrauss_Lemma,}
-\keyword{RandomProjection,}
-\keyword{classification,}
-\keyword{k-nn,}
+\keyword{classification}
+\keyword{confusion_matrix}
+\keyword{feature_extraction}
+\keyword{k-nn}
 \keyword{svm}

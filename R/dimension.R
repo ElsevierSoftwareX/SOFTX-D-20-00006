@@ -32,7 +32,7 @@
 #' d <-  c(0.5,0.1)
 #' x<- dimension(103260,d)
 #'
-#' @keywords Random projection , Johnson - Lindenstrauss Lemma, Dimension Reduction
+#' @keywords Random_projection Johnson-Lindenstrauss_Lemma Dimension_Reduction
 #'
 #' @return minimum number of dimension required to maintain the pair wise distance between any two
 #' points with the controlled amount of error(eps)

@@ -64,7 +64,7 @@
 #' res <- classify(trainn,testt,trainl,testl)
 #' res
 #'
-#' @keywords RandomProjection, Johnson-Lindenstrauss_Lemma, Dimension_Reduction, classification, k-nn, svm
+#' @keywords classification feature_extraction k-nn svm confusion_matrix 
 #'
 #' @return Confusion Matrix
 #'
